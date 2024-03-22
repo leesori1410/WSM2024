@@ -1,16 +1,16 @@
-# style 적용 3가지 방법
+# 🍕style 적용 3가지 방법
 1. <...style="...">
 2. `<style>...</style>`
 3. `<link rel="stylesheet" href="css파일.css">`
 
-# 형식
+# 🌭형식
 ```css
 선택자 {
     속성: 값;   /* 선언 */
 }
 ```
 
-# 선택자
+# 🍣선택자
 ```
 *           : 모든 것
 TAG         : HTML TAG
@@ -26,14 +26,14 @@ TAG         : HTML TAG
 
 [속성="값"]         : <TAG 속성="값"></TAG>
 
-선택자:first-child()        : 첫째 자식
-선택자:nth-child(N)         : N번재 자식
-선택자:last-child()         : 막내 자식
+선택자:first-child        : 첫째 자식
+선택자:nth-child(N)       : N번재 자식
+선택자:last-child         : 막내 자식
 
 선택자:hover        : 마우스 올리면 선택되는 선택자
 ```
 
-# 우선순위
+# 🍿우선순위
 1. !important
 2. (인라인 스타일: HTML파일 안 태그의 style 속성)
 3. #id
