@@ -18,7 +18,10 @@
     --small-font-size: 0.8rem;
     --smaller-font-size: 0.6rem;
 
-    /* z-index */
+    /* z-index */   
     --z-index: 100;
+
+    /* nav */
+    --nav-height: 44px;
 
 }
