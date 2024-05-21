@@ -1,0 +1,55 @@
+#school-food {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-top: calc(var(--nav-height) + 100px);
+}
+
+.button-container {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 20px;
+    font-size: var(--h1-font-size);
+    margin-bottom: 40px;
+}
+
+.prev-date,
+.next-date {
+    font-size: var(--h1-font-size);
+    border: none;
+    background-color: transparent;  /* 배경색을 투명하게 */
+    cursor: pointer;
+}
+
+.menu-container {
+    /* 부모 요소의 전체 너비 차지 */
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 80px;
+    row-gap: 40px;
+}
+
+.school-food-menu {
+    max-width: 300px;
+    padding: 20px;
+    /* grow  */
+    flex: 1 0 200px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.school-food-menu>.title {
+    margin-bottom: 20px;
+    font-size: var(--h1-font-size);
+    text-align: center;
+}
+
+.school-food-menu>.menu {
+    font-size: var(--h2-font-size);
+    text-align: center;
+}
+
