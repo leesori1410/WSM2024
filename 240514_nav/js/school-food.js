@@ -2,8 +2,8 @@
 let currentDate = new Date();
 
 // 날짜, 요일을 화면에 표시하는 함수 
-const displayDate = () => {   
-// 요일을 나타내는 문자열을 선언
+const displayDate = () => {
+    // 요일을 나타내는 문자열을 선언
     let days = "일월화수목금토";
     // 현재 월 가져오기(month는 0부터 시작, +1 해줘야 함)
     let month = currentDate.getMonth() + 1
@@ -21,7 +21,7 @@ const displayDate = () => {
 // 날짜 변경하고 화면에 표시하는 함수
 const changeDate = (diff) => {
     // 현재 날짜에 diff만큼 더하거나 빼기
-    currentDate.setDate(currentDate.getDate()+diff);
+    currentDate.setDate(currentDate.getDate() + diff);
     // YYYYMMDD로 변환하고
     const dateData = currentDate.toISOString().slice(0, 10).replace(/-/g, "");
     // 변경된 날짜를 화면에 표시
