@@ -37,11 +37,11 @@
 
     <main id="school-food" class="container">
         <section class="button-container">
-            <button class="btn prev-date">
+            <button class="btn prev-date" onclick="changeDate(-1)">
                 <i class="bi bi-chevron-compact-left"></i>
             </button>
             <header class="school-food-title">🍚 화요일의 메뉴 🍚</header>
-            <button class="btn next-date">
+            <button class="btn next-date" onclick="changeDate(1)">
                 <i class="bi bi-chevron-compact-right"></i>
             </button>
         </section>
@@ -80,8 +80,10 @@
     </main>
 
 
-    <script src="nav.js">
+    <script src="js/nav.js">
+        // place holder : ${ }
     </script>
+    <script src="js/school-food.js"></script>
 
 </body>
 </html>

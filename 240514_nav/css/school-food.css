@@ -53,3 +53,34 @@
     text-align: center;
 }
 
+/* tablet */
+@media screen and (max-width:600px){
+    #school-food {
+        margin-top: calc(var(--nav-height) + 30px);
+    }
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .school-food-menu {
+        min-width: 100%;
+    }
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 300px;
+        /* 고정 너비(최대 너비) 설정 후 작동, menu 요소의 최대 너비와 동일하거나 더 작아야 합니다. 중앙 정렬을 효과 보이지 않을 수 있음. */
+        margin: 0 auto;
+    }
+    .menu-food:nth-child(odd) {
+        text-align: left;
+    }
+    .menu-food:nth-child(even) {
+        text-align: right;
+    }
+    /* 시각적 균형 */
+    .menu-food {
+        width: 50%;
+    }
+}
