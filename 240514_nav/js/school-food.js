@@ -26,14 +26,14 @@ const TYPE = "json";
 const getSchoolFoodMenu = (dateData) => {
     // 띄어쓰기 XXX
     let api_url = `${URL}?\
-KEY=${API_KEY}\
+    KEY=${API_KEY}\
 &Type=${TYPE}\
 &ATPT_OFCDC_SC_CODE=${ATPT_OFCDC_SC_CODE}\
 &SD_SCHUL_CODE=${SD_SCHUL_CODE}\
 &MLSV_YMD=${dateData}`;
 
     console.log(api_url);
-
+    
     // 비동기 요청 (부분만)
     // error 없이 응답오면, 데이터 처리
     // error 있으면, 에러 처리
@@ -78,20 +78,20 @@ const setSchoolFoodMenu = (data) => {
             menu = menu.split("<br/>");
             // 하나씩 꺼내어 <li class = "menu-food">하나의 꺼낸 음식</li>
             menu.forEach((food) => {
-                menuFood += `<li class="menu-fodd">${food}</li>\n`;
-            })
+                menuFood += `<li class="menu-food">${food}</li>\n`;
+                })
 
             // js 변수 -> HTML 표시
             if(menuRow["MMEAL_SC_NM"] === "조식"){
                 breakfastMenuUl.innerHTML = menuFood;
-            }
-            else if(menuRow["MMEAL_SC_NM"] === "중식"){
-                lunchMenuUl.innerHTML = menuFood;
-            }
-            else if(menuRow["MMEAL_SC_NM"] === "석식"){
-                dinnerMenuUl.innerHTML = menuFood;
-            }
-        });
+                }
+                else if(menuRow["MMEAL_SC_NM"] === "중식"){
+                    lunchMenuUl.innerHTML = menuFood;
+                    }
+                    else if(menuRow["MMEAL_SC_NM"] === "석식"){
+                        dinnerMenuUl.innerHTML = menuFood;
+                        }
+                        });
     // console.log("식사들 : ", data["mealServiceDietInfo"]["1"]["row"]);
 
 
