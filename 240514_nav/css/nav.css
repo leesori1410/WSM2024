@@ -38,7 +38,7 @@ body>header {
     left: 0;
     z-index: 10;
 }
-nav.container {
+.nav.container {
     background-color: var(--primary-color);
     height: var(--nav-height);
     display: flex;                  /* 기본값: 가로로 배치 */
