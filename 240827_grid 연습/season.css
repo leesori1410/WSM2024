@@ -1,0 +1,27 @@
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 6fr 4fr;
+}
+.item {
+    /* border: 1px solid hotpink; */
+    font-size: 5rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    place-items: center;
+}
+.item:first-child {
+    background-color: yellow;
+}
+.item:nth-child(2) {
+    background-color: red;
+}
+.item:nth-child(3) {
+    background-color: peru;
+}
+.item:last-child {
+    background-color: blue;
+}
