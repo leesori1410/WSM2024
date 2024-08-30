@@ -1,28 +1,62 @@
 .container {
     width: 600px;
-    height: 800px;
+    height: 700px;
     display: grid;
-    grid-template-columns: repeat(6, 100px);
-    grid-template-rows: repeat(8, 100px);
-    background-color: pink;
-    padding: 10px;
+    grid-template-columns: 100px 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 70px repeat(7, 1fr);
+    background-color: black;
+    padding: 3px;
 }
 .item {
+    border: 2px solid black;
     display: grid;
     place-items: center;
     background-color: white;
+}
+.week_name {
+    background-color: rgb(255, 230, 91);
     color: black;
-    border: 1px solid pink;
 }
-.col1 {
-    color: hotpink;
-    margin-right: 5px;  
+/* .item:nth-child(6n+1) {
+    color: rgb(255, 173, 187);
+} */
+.class {
+    color: rgb(255, 230, 91);
+    background-color: black;
 }
-.row1 {
-    background-color: hotpink;
-    color: white;
-    margin-bottom: 5px;
+.ds {
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
-#ds1, #java1, #coding1, #py1, #web1, #web2, #club1, #js1 {
-    grid-row: span 2;
+.wsm {
+    grid-row-start: 7;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.java {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+.club_activity {
+    grid-area: 7 / 4 / 9 / 5;
+}
+.coding {
+    grid-area: 4 / 5 / span 2 / 6;
+}
+.python {
+    grid-area: 6 / 5 / span 2 / 6;
+}
+.wsmtwo {
+    grid-area: 4 / 6 / 6 / 7;
+}
+.choicetwo {
+    grid-area: 6 / 6 / 8 / 7;
+}
+.item:first-child {
+    font-size: 30px;
 }
