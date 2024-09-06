@@ -1,0 +1,40 @@
+#calendar {
+    width: 600px;
+    margin: 0 auto;
+}
+#calendar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+#prev-month, 
+#next-month {
+    border: none;
+    background-color: rgb(27, 74, 74);
+    color: white;
+    padding: 5px 8px 7px 8px;
+    cursor: pointer;
+}
+#calendar-container{
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-bottom: 1.4px solid #aaa;
+}
+.item {
+    display: grid;
+    place-items: center;
+}
+/* 이번달만 커서 적용 .item이면서 .other-date가 없는 애야 */
+.item:not(.other-date) {
+    cursor: pointer; /* 커서를 포인터로 변경 */
+}
+.week-name {
+    color: #aaa;
+    border-bottom: 1.4px solid #aaa;
+    font-weight: bold;
+}
+.other-date {
+    color: #ddd;
+}
