@@ -26,8 +26,8 @@
     display: grid;
     place-items: center;
 }
-/* 이번달만 커서 적용 .item이면서 .other-date가 없는 애야 */
-.item:not(.other-date) {
+/* 이번달만 커서 적용 .item이면서 .other-month가 없는 애야 */
+.item:not(.other-month) {
     cursor: pointer; /* 커서를 포인터로 변경 */
 }
 .week-name {
@@ -35,6 +35,13 @@
     border-bottom: 1.4px solid #aaa;
     font-weight: bold;
 }
-.other-date {
-    color: #ddd;
+.item:nth-child(7n+1){
+    color: crimson;
+}
+.item:nth-child(7n+7){
+    color: cornflowerblue;
+}
+/* 가장 우선순위가 높게 적용 */
+.other-month {
+    color: #ddd !important;
 }
