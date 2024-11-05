@@ -53,7 +53,7 @@ main{
 #dormitory input{
     font-size: var(--h2-font-size);
     border: none;
-    background-color: #F0F0F0;
+    background-color: rgb(160, 212, 156);
     border-radius: 30px;
     padding: 15px 20px;
 }
