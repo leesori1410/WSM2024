@@ -52,8 +52,8 @@ main{
 #dormitory select,
 #dormitory input{
     font-size: var(--h2-font-size);
-    border: none;
-    background-color: rgb(160, 212, 156);
+    border: 5px solid rgb(160, 212, 156);
+    background-color: white;
     border-radius: 30px;
     padding: 15px 20px;
 }
