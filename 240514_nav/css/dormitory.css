@@ -63,8 +63,9 @@ main{
     margin-top: 40px;
     float: right;
 }
-#board-container{
+.board-container{
     display: grid;
+    max-width: 800px;
     grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1fr;
 }
 #board .header{
